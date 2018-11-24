@@ -1,0 +1,647 @@
+
+/*===========================================================================*/
+							/*480px CSS*/
+/*===========================================================================*/
+@media (max-width: 480px) {
+
+.cp-navigation-row{
+	padding: 20px 0;
+}
+.cp_header #cp-slide-search form input[type="text"]{
+	width: 72%;
+	font-size: 14px;
+}
+.cp-topbar .top-listed{
+	margin-bottom: 10px;
+}
+#search-push{
+	cursor: pointer;
+}
+#cp-slide-search form button{
+	font-size: 18px;
+	max-width: 70px
+}
+.top-listed .dropdown .dropdown-menu{
+	left: inherit;
+	right: 0;
+}
+.cp-logo img{
+	max-width: 100%;
+}
+.cp-booking-form-outer .second-col,.cp-booking-form-outer .first-col{
+	width: 100%;
+}
+.cp-tabs-holder .nav-tabs > li a{
+	padding: 5px 7px;
+	font-size: 12px;
+}
+.cp-why-choose-text{
+	width: 100%;
+}
+.cp-why-choose-text{
+	margin-bottom: 40px;
+}
+.cp_banner .banner-title{
+	font-size: 30px;
+	line-height: 30px;
+}
+.cp_banner h2{
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.cp-banner-caption{
+	display: none;
+}
+#cp_banner-slider .owl-controls{
+	top: 30%;
+}
+.cp-why-choose-text h3{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.cp-why-choose-text h2{
+	font-size: 40px;
+}
+.cp-parallax-section .cp-parallax-box h2,.cp-parallax-section .cp-location-box h3{
+	font-size: 20px;
+}
+.cp-parallax-section .cp-parallax-box h3 span{
+	font-size: 26px;
+}
+
+#cp-testimonial-slider .owl-controls{
+	bottom: -30px;
+}
+.cp-testimonial-inner{
+	text-align: center;
+}
+.cp-testimonial-inner .cp-icon{
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+}
+.cp-accordian-item .panel-heading .panel-title > a{
+	font-size: 14px;
+}
+.cp-accordian-item .panel-body{
+	padding: 10px 15px;
+}
+.cp-footer-nav li{
+	margin-bottom: 10px;
+}
+#wrapper .cp-heading-style1 h2, #wrapper .cp-heading-style2 h2{
+	padding: 0;
+	font-size: 26px;
+}
+.cp-heading-style1 h2:before, .cp-heading-style2 h2:before,.cp-heading-style1 h2:after, .cp-heading-style2 h2:after{
+	display: none;
+}
+.cp-parallax-section:after{
+	display: none;
+}
+#wrapper .cp-location-box{
+	padding: 20px;
+}
+.cp-location-listed li{
+	font-size: 14px;
+	padding-left: 35px;
+}
+.cp-location-listed li:before{
+	font-size: 24px;
+}
+.cp-location-listed li .cp-btn-style2{
+	margin-top: 30px;
+}
+.cp-testimonial-inner .cp-blockquote{
+	padding: 20px;
+}
+.cp-testimonial-inner .cp-blockquote::before, .cp-testimonial-inner .cp-blockquote::after{
+	font-size: 20px;
+}
+.cp-testimonial-inner .cp-text span{
+	margin-left: 0;
+	padding-left: 0;
+}
+.cp-testimonial-inner .cp-text span:before{
+	display: none;
+}
+.cp-accordian-item .panel-body .cp-thumb{
+	width: 100%;
+}
+.cp-accordian-item .panel-body .cp-text{
+	width: 100%;
+	float: left;
+	margin: 15px 0;
+}
+.cp-inner-awwards-holder li,.cp-faq-holder .cp-listed > li{
+	font-size: 14px;
+}
+.cp-faq-holder .cp-listed > li{
+	padding: 12px 10px;
+}
+.cp-faq-tabs-holder .nav-tabs > li, .cp-faq-holder .nav-tabs > li{
+	margin-bottom: 5px;
+}
+.cp-booking-form-outer2{
+	padding: 20px 10px;
+}
+.cp-blog-item .cp-text .date-box{
+	margin: 0 0 20px;
+	float: none;
+	display: inline-block;
+}
+.cp-blog-item .cp-text{
+	text-align: center;
+}
+.cp-blog-item .cp-text h3{
+	font-size: 20px;
+}
+.cp-blog-item .cp-text .date-box span{
+	right: 0;
+}
+.cp-blog-item .cp-thumb iframe{
+	height: 200px
+}
+#wrapper .cp-blog-item .cp-text::before{
+	width: 90%;
+}
+.cp-author-info-holder .cp-thumb{
+	margin-right: 15px;
+}
+.cp-comments-listed ul{
+	padding-left: 20px;
+}
+.cp-gallery-section .row .col-md-6 .cp-gallery-box .cp-caption{
+	padding-top: 20px;
+}
+.footer-about-box p{
+	font-size: 16px;
+}
+.top-listed > li{
+	padding: 0 10px;
+}
+.cp-app-thumb .app-img1{
+	display: none;
+}
+.cp-mobile-app-section .cp-app-thumb:hover img{
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+.booking-date .inner,.booking-date input[type="text"], .booking-date select{
+	width: 50px;
+}
+.booking-date .inner{
+	margin-right: 4px;
+}
+.cp-taxi-holder .cp-text{
+	padding: 10px 20px 30px;
+}
+.choose-btn{
+	font-size: 14px;
+}
+.cp-app-btn li{
+	width: 45%;
+}
+.cp-app-btn li img{
+	width: 100%;
+}
+
+.pd-tb80{
+	padding: 50px 0;
+}
+.pd-t80{
+	padding-top: 50px;
+}
+.pd-b80{
+	padding-bottom: 50px;
+}
+
+
+}
+
+
+
+/*===========================================================================*/
+							/*767px CSS*/
+/*===========================================================================*/
+@media (max-width: 767px) {
+
+.cp_header{
+	position: relative;
+	background-color: #222;
+}
+#cp-slide-menu > .navbar-nav{
+	margin: 0;
+}
+.cp-nav-holder > .navbar-nav{
+	display: none;
+}
+#cp_banner-slider .cp-banner-caption{
+	bottom: 30px;
+}
+#cp-slide-search form input[type="text"]{
+	width: 85%;
+}
+.cp-topbar{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.cp_inner-banner{
+	padding: 150px 0 100px;
+	background: url(../images/banner/inner-banner-img-03.jpg) top left no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+#cp-inner-contact{
+	background: none;
+	padding: 0;
+}
+.cp_inner-banner > img{
+	display: none;
+}
+.cp-inner-banner-holder h2{
+	font-size: 36px;
+	margin: 0 0 20px;
+	width: 100%;
+}
+.cp-inner-banner-holder .breadcrumb{
+	width: 100%;
+	text-align: center;
+}
+.cp_inner-banner .animate-bus{
+	display: block;
+}
+.cp-inner-banner-holder{
+	bottom: 100px;
+}
+.cp-booking-section{
+	padding-top: 50px;
+}
+.cp-why-choose-listed .cp-box{
+	padding: 25px 20px;
+}
+.cp-why-choose-listed .cp-box h3{
+	font-size: 26px;
+}
+.cp-why-choose-listed .cp-box > img{
+	height: 100%;
+}
+.cp-why-choose-listed .cp-box .icomoon{
+	font-size: 50px;
+}
+.cp-parallax-section .cp-parallax-box{
+	left: 0;
+}
+.cp-location-box{
+	padding: 25px 40px;
+}
+.cp-testimonial-inner .cp-icon{
+	margin-left: 10px;
+}
+.cp-footer-nav{
+	margin-top: 30px;
+}
+.cp-why-choose-listed > li{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.cp-why-choose-listed .cp-box:hover, .cp-why-choose-listed .cp-box.active{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.cp-parallax-section .cp-parallax-box{
+	padding: 30px 20px;
+	bottom: inherit;
+}
+.cp-parallax-box h2{
+	font-size: 36px;
+}
+.cp-parallax-box h3{
+	font-size: 24px;
+}
+.cp-parallax-box h3 span{
+	font-size: 30px;
+}
+.cp-heading-style1 h2, .cp-heading-style2 h2{
+	font-size: 36px;
+	padding: 0 50px;
+}
+#cp-map-home{
+	height: 500px;
+}
+.cp-ft-form-box .inner-holder,.cp-ft-form-box .inner-holder2{
+	width: 100%;
+}
+.cp-logo-listed li{
+	width: 24%;
+}
+.cp-logo-listed li img{
+	width: 100%;
+	height: auto;
+}
+.cp-testimonial-inner{
+	text-align: center;
+}
+.cp-mobile-app-section .cp-app-text{
+	padding-top: 30px;
+}
+.choose-thumb{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.choose-thumb img{
+	width: 100%;
+	border-radius: 0;
+}
+.cp-why-choose-text{
+	width: 100%;
+}
+.cp-choose-list li{
+	font-size: 16px;
+}
+.cp-offers-inner{
+	text-align: center;
+}
+.cp-offers-listed > li{
+	margin-bottom: 30px;
+}
+.cp-offers-inner .icon-holder{
+	float: none;
+	position: relative;
+	left: 0;
+	display: inline-block;
+	right: 0;
+}
+.cp-offers-inner .cp-text{
+	padding: 70px 30px 30px;
+}
+.cp-deals-holder .cp-thumb{
+	width: 100%;
+}
+.cp-faq-tabs-holder .nav-tabs > li a, .cp-faq-holder .nav-tabs > li a{
+	font-size: 14px;
+	font-weight: 400;
+	padding: 6px 12px;
+}
+.cp-faq-holder{
+	margin-bottom: 30px;
+}
+.cp-booking-form-outer2{
+	width: 100%;
+	padding: 30px 20px;
+}
+h3{
+	font-size: 24px;
+}
+.cp-blog-item .cp-text::before{
+	width: 92%;
+}
+.cp-gallery-box img{
+	width: 100%;
+	height: auto;
+}
+.cp-gallery-section .row .col-md-12 .cp-gallery-box .cp-caption{
+	padding-top: 10px;
+}
+.cp-reservation-box{
+	width: 100%;
+	padding: 20px;
+}
+.cp-get-in-outer{
+	padding-left: 0;
+	border: none;
+}
+.cp-get-in-outer .inner-holder{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #fff;
+}
+#cp-inner-map{
+	height: 400px;
+}
+.cp-booking-section.cp-booking-section2{
+	padding: 40px 0;
+}
+.cp-reservation-box .inner-holder{
+	width: 100%;
+}
+.cp-reservation-box .inner-holder input[type="text"], .cp-reservation-box .inner-holder input[type="password"]{
+	min-width: 100%;
+}
+.cp-location-listed li{
+	padding-bottom: 30px;
+}
+.cp-heading-style1, .cp-heading-style2{
+	margin: 0 0 27px;
+}
+.cp-ft-top-section{
+	background-size: cover;
+}
+
+
+
+}
+
+
+/*===========================================================================*/
+						/*768px And 992px CSS*/
+/*===========================================================================*/
+@media (min-width: 768px) and (max-width: 992px) {
+.cp-navigation-row{
+	padding: 10px 0;
+}
+#cp_banner-slider .cp-banner-caption{
+	bottom: 30px;
+}
+#cp-inner-header{
+	background-color: #222;
+	position: static;
+}
+.cp-topbar{
+	margin-bottom: 15px;
+}
+.cp-nav-holder{
+	width: 100%;
+	margin: 20px 0 0;
+}
+#cp-slide-search form input[type="text"]{
+	width: 85%;
+}
+.cp-booking-section{
+	padding-top: 50px;
+}
+.cp-why-choose-listed .cp-box{
+	padding: 25px 20px;
+}
+.cp-why-choose-listed .cp-box h3{
+	font-size: 26px;
+}
+.cp-why-choose-listed .cp-box > img{
+	height: 100%;
+}
+.cp-why-choose-listed .cp-box .icomoon{
+	font-size: 50px;
+}
+.cp-parallax-section .cp-parallax-box{
+	left: 0;
+}
+.cp-location-box{
+	padding: 25px 40px;
+}
+.cp-testimonial-inner .cp-icon{
+	margin-left: 10px;
+}
+.cp-footer-nav{
+	margin-top: 30px;
+}
+.choose-thumb{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.choose-thumb img{
+	width: 100%;
+	border-radius: 0;
+}
+.cp-why-choose-text{
+	width: 100%;
+}
+.cp-offers-inner .cp-text{
+	padding-left: 120px;
+}
+.cp-offers-inner .icon-holder{
+	left: 0;
+}
+.cp-faq-tabs-holder .nav-tabs > li a, .cp-faq-holder .nav-tabs > li a{
+	font-size: 16px;
+	padding: 7px 15px;
+}
+.cp-faq-holder{
+	margin-bottom: 30px;
+}
+#cp-inner-map{
+	height: 400px;
+}
+.cp-booking-form-outer2,.cp-reservation-box{
+	width: 100%;
+	padding: 40px 70px;
+}
+.cp-inner-banner-holder h2{
+	font-size: 40px;
+}
+.cp-ft-top-section{
+	background-size: cover;
+}
+
+
+
+
+}
+
+
+/*===========================================================================*/
+							/*1200px CSS*/
+/*===========================================================================*/
+@media (min-width: 1200px) {
+.cp_banner{
+	margin-bottom: 40px;
+}
+.cp_banner:after{
+	display: block;
+}
+#cp_banner-slider .cp-banner-caption{
+	bottom: 270px;
+}
+.cp-nav-holder .navbar-nav > li > a{
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px 9px;
+}
+.cp-nav-holder .navbar-nav li a .fa{
+	font-size: 16px;
+}
+.cp-nav-holder .nav-right-listed > li{
+	padding: 0 12px;
+}
+.cp-advertising-section:after{
+	display: block;
+}
+.cp-booking-section{
+	padding-top: 26px;
+}
+.cp-inner-banner-holder{
+	bottom: 100px;
+}
+.cp-inner-awwards-holder{
+	padding: 52px 30px 43px 140px; 
+}
+.cp-inner-awwards-holder li{
+	font-size: 24px;
+}
+.cp-ft-form-box .inner-holder{
+	width: 34.5%;
+}
+.cp-ft-form-box .inner-holder2{
+	width: 28%;
+}
+.cp-location-box{
+	width: 90%;
+	float: none;
+}
+.cp-advertising-section:before{
+	display: block;
+}
+.cp-advertising-section{
+	margin-top: 50px;
+}
+.cp-footer-nav li{
+	font-size: 16px;
+	font-weight: 600;
+}
+.cp-parallax-box h2{
+	font-size: 60px;
+}
+.cp-parallax-box h3{
+	font-size: 44px;
+}
+.cp-booking-form-outer .cp-btn-style1{
+	padding: 13px 25px;
+}
+
+
+}
+
+
+/*===========================================================================*/
+							/*1600px CSS*/
+/*===========================================================================*/
+@media (min-width: 1600px) {
+body{
+	position: relative;
+	right: 0;
+}
+#cp_banner-slider .cp-banner-caption{
+	bottom: 380px;
+}
+.cp_banner .banner-title{
+	font-size: 100px;
+	line-height: 100px;
+}
+.cp_banner h2{
+	font-size: 48px;
+	line-height: 40px;
+}
+.cp-ft-top-section{
+	background-size: cover;
+}
+
+
+}
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ambulance
+        <%= userId %>
+    </title>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="ASAP.ico" type="image/x-icon">
+    <link rel="icon" href="ASAP.ico" type="image/x-icon">
+</head>
+
+<body data-userId="<%= userId %>">
+    <h1>Hello Ambulance
+        <%= userId %>
+    </h1>
+    <h2>Ambulance details: </h2>
+    <div id="ambulanceDetails"></div>
+
+    <h4 id="notification"> Waiting for requests...</h4>
+
+    <button onclick="helpCitizen()">
+        Help Citizen
+    </button>
+
+    <div id='map' style='width: 1600px; height: 600px;'></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+
+    <script type="text/javascript">
+        var socket = io();
+
+        //Fetch userId from the data-atribute of the body tag
+        var userId = document.body.getAttribute("data-userId");
+
+        //Join a room, roomname is the userId itself!
+        socket.emit('join', {
+            userId: userId
+        });
+
+        //Empty variables to store information. This will get filled later
+        var requestDetails = {};
+        var ambulanceDetails = {};
+        var map, marker;
+
+        //First send a GET request using JQuery AJAX and get the cop's details and save it
+        $.ajax({
+            url: '/cops/info?userId=' + userId,
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                ambulanceDetails = data.ambulanceDetails;
+                ambulanceDetails.location = {
+                    address: ambulanceDetails.location.address,
+                    longitude: ambulanceDetails.location.coordinates[0],
+                    latitude: ambulanceDetails.location.coordinates[1]
+                }
+
+                document.getElementById("ambulanceDetails").innerHTML = JSON.stringify(data.ambulanceDetails);
+
+                L.mapbox.accessToken = 'pk.eyJ1IjoiaWFtc2lkMiIsImEiOiJjam1pemRrc3gwOW1jM3dxcWwyMXhubmx1In0.D-nlBUTjIfBj6E4NusKkqA';
+                //Load the map and set it to a cop's lat-lng
+                map = L.mapbox.map('map', 'mapbox.streets');
+                map.setView([ambulanceDetails.location.latitude, ambulanceDetails.location.longitude], 15);
+
+                //Display a default marker
+                marker = L.marker([ambulanceDetails.location.latitude, ambulanceDetails.location.longitude]).addTo(map);
+
+                //Use MapBox geo-coding API
+                map.addControl(L.mapbox.geocoderControl('mapbox.places', {
+                    autocomplete: true,
+                }).on('select', function (data) {
+                    //This function runs when a place is selected
+
+                    //data contains the geocding results
+                    console.log(data);
+
+                    //Do something with the results
+
+                    //Set the marker to new location
+                    marker.setLatLng([data.feature.center[1], data.feature.center[0]]);
+                }));
+            },
+            error: function (httpRequest, status, error) {
+                console.log(error);
+            }
+        });
+
+        //Listen for a 'request-for-help' event
+        socket.on('request-for-help', function (data) {
+            requestDetails = data; //Save request details
+
+            //display citizen info
+            document.getElementById("notification").innerHTML = "You have a new request! \n" + JSON.stringify(requestDetails);
+
+            //Show citizen location on the map
+            L.marker([requestDetails.location.latitude, requestDetails.location.longitude], {
+                icon: L.icon({
+                    iconUrl: '/images/citizen.png',
+                    iconSize: [50, 50]
+                })
+            }).addTo(map);
+
+        });
+
+        function helpCitizen() {
+            //On clicking the button, emit a 'request-accepted' event/signal and send relevant info back to server
+            socket.emit('request-accepted', {
+                requestDetails: requestDetails,
+                ambulanceDetails: ambulanceDetails
+            });
+        }
+    </script>
+</body>
+
+</html>

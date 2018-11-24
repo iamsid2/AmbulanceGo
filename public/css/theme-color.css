@@ -1,0 +1,42 @@
+/*===========================================================================*/
+						/*Alizarin Theme Color CSS*/
+/*===========================================================================*/
+a.cp-btn-style1,a.cp-btn-style2:before,.cp-driver-box .cp-caption:before,.cp-why-choose-listed .cp-box:hover,.cp-why-choose-listed .cp-box.active,.cp-advertising-box .thumb .num,.cp-accordian-item .panel-heading .panel-title > a:after,.cp-booking-form-outer .cp-btn-style1,#cp-slide-search form button
+,.cp-offers-inner .cp-text:before,.cp-offers-inner:hover .icon-holder,.cp-pagination-row .pagination li a:hover,.cp-pagination-row .pagination li span:hover,.cp-pagination-row .pagination li.active span,.cp-pagination-row .pagination li.active a,.cp-faq-holder .nav-tabs > li a
+,.cp-faq-tabs-holder .nav-tabs > li a,.cp-reservation-box .submit,.cp-get-in-outer,.cp-form-box .inner-holder .btn-submit,.cp-form-box.cp-form-box2 .inner-holder .btn-submit,.cp-ft-form-box form button:hover{
+	background-color: #d82a2b;
+}
+.top-listed > li:hover > a,.top-listed li a:hover,.cp-nav-holder .nav-right-listed > li:hover,.cp-nav-holder .nav-right-listed > li:hover > a,.cp-nav-holder .navbar-nav > li:hover > a,.cp-nav-holder .navbar-nav li li a:hover,.cp-social-links li:hover a,.cp-social-links li:hover
+,.cp-ft-form-box h4 a:hover,.remember-pw,.cp-footer-nav li:hover a,.cp-taxi-holder .cp-text h3,.cp-app-text strong,.cp-why-choose-listed .cp-box h3,.cp-read-more,.cp-testimonial-box .test-bottom p,.cp-read-more:before,.cp-testimonial-box > p a,.cp-accordian-item .panel-body .cp-text h4,.cp_side-navigation li a:hover
+,.cp-choose-list li:before,.cp-choose-list li:hover,.cp-inner-banner-holder .breadcrumb > li:hover,.cp-inner-banner-holder .breadcrumb > li:hover a,.cp-offers-inner .cp-text h3,.widget-recent-post > ul > li,.widget-recent-post > ul > li > a,.cp-popular-holder .cp-text h5,.cp-faq-holder .cp-listed > li a
+,.cp-faq-holder .nav-tabs > li.active > a,.cp-faq-holder .nav-tabs > li.active > a:hover,.cp-faq-holder .nav-tabs > li.active > a:focus,.cp-faq-tabs-holder .nav-tabs > li.active > a,.cp-faq-tabs-holder .nav-tabs > li.active > a:hover,.cp-faq-tabs-holder .nav-tabs > li.active > a:focus
+,.cp-clients-box .cp-clients-listed li,.cp-clients-box .cp-clients-listed li a,.cp-blog-item .cp-meta-listed li,.cp-blog-item .cp-meta-listed li a,.cp-blog-item .cp-meta-listed li + li:before,.cp-author-info-holder .cp-text h4 a,.cp-author-info-holder .cp-meta-listed li,.cp-gallery-box .cp-caption h3
+,.cp-reservation-box .asked,.cp-reservation-box .lost-pw,.cp-location-box h3,.cp-topbar .tp-num 
+{
+	color: #d82a2b;
+}
+
+.cp-faq-holder .nav-tabs > li a,.cp-clients-box .cp-clients-listed,.cp-advertising-box .thumb:hover{
+	border-color: #d82a2b;
+}
+
+
+
+/*===========================================================================*/
+						/*Yellow Theme Color CSS*/
+/*===========================================================================*/
+a.cp-btn-style2,a.cp-btn-style1:before,#cp_banner-slider .owl-dots .owl-dot.active span,.cp-ft-form-box form button,.choose-btn:hover,.cp-testimonial-inner .cp-icon:before,#cp-testimonial-slider .owl-dots .owl-dot.active span,.cp-accordian-item .panel-heading .panel-title > a.collapsed:after,.cp-booking-form-outer .cp-btn-style1:hover
+,.cp-clients-box .cp-clients-listed:before,.cp-form-box .inner-holder .btn-submit,.cp-form-box .inner-holder .btn-submit:hover{
+	background-color: #f7ad00;
+}
+.cp_banner .banner-title,.cp-why-choose-text h2 span,.cp-why-choose-listed .cp-box .readmore:hover,.cp-parallax-box h3 span,.cp-testimonial-inner .cp-text strong,.cp-testimonial-inner .cp-text span
+,.cp-tabs-holder .nav-tabs > li.active > a,.cp-tabs-holder .nav-tabs > li.active > a:hover,.cp-tabs-holder .nav-tabs > li.active > a:focus,.cp-inner-banner-holder .breadcrumb > li + li::before,.cp-inner-banner-holder .breadcrumb > li a
+,.cp-inner-banner-holder .breadcrumb > li,.cp-inner-awwards-holder li span,.cp-accordian-item h3,.cp-faq-heading h3,.cp-faq-holder h3,.cp-clients-box .cp-clients-listed li:hover,.cp-reservation-box h3,.cp-contact-inner-holder h3{
+	color: #f7ad00;
+}
+.cp-testimonial-inner .cp-text span:before{
+	border-bottom-color: #f7ad00;
+}
+.cp-nav-holder .navbar-nav li ul,#cp-testimonial-slider .owl-dots .owl-dot.active span{
+	border-color: #f7ad00;
+}
