@@ -2,8 +2,6 @@ var http = require("http");
 var express = require("express");
 var ejs = require('ejs');
 var engine = require('ejs-mate');
-var consolidate = require("consolidate"); //1
-var _ = require("underscore");
 var bodyParser = require('body-parser');
 
 var routes = require('./routes'); //File that contains our endpoints
