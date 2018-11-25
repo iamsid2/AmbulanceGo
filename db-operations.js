@@ -1,4 +1,4 @@
-function fetchNearestCops(db, coordinates, callback) {
+function fetchNearestambulance(db, coordinates, callback) {
 
     db.collection("policeData").createIndex({
         "location": "2dsphere"
@@ -94,7 +94,7 @@ function fetchRequests(db, callback) {
     });
 }
 
-exports.fetchNearestCops = fetchNearestCops;
+exports.fetchNearestambulance = fetchNearestambulance;
 exports.fetchambulanceDetails = fetchambulanceDetails;
 exports.saveRequest = saveRequest;
 exports.updateRequest = updateRequest;

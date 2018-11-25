@@ -7,9 +7,6 @@
         <%= userId %>
     </title>
     <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
-
-    <!-- favicons
-    ================================================== -->
     <link rel="shortcut icon" href="ASAP.ico" type="image/x-icon">
     <link rel="icon" href="ASAP.ico" type="image/x-icon">
 </head>
@@ -46,14 +43,13 @@
             userId: userId
         });
 
-        //Empty variables to store information. This will get filled later
+
         var requestDetails = {};
         var ambulanceDetails = {};
         var map, marker;
 
-        //First send a GET request using JQuery AJAX and get the cop's details and save it
         $.ajax({
-            url: '/cops/info?userId=' + userId,
+            url: '/ambulance/info?userId=' + userId,
             type: 'GET',
             dataType: 'json',
             success: function (data) {
@@ -67,7 +63,7 @@
                 document.getElementById("ambulanceDetails").innerHTML = JSON.stringify(data.ambulanceDetails);
 
                 L.mapbox.accessToken = 'pk.eyJ1IjoiaWFtc2lkMiIsImEiOiJjam1pemRrc3gwOW1jM3dxcWwyMXhubmx1In0.D-nlBUTjIfBj6E4NusKkqA';
-                //Load the map and set it to a cop's lat-lng
+                //Load the map and set it to a ambulance's lat-lng
                 map = L.mapbox.map('map', 'mapbox.streets');
                 map.setView([ambulanceDetails.location.latitude, ambulanceDetails.location.longitude], 15);
 
@@ -78,14 +74,8 @@
                 map.addControl(L.mapbox.geocoderControl('mapbox.places', {
                     autocomplete: true,
                 }).on('select', function (data) {
-                    //This function runs when a place is selected
 
-                    //data contains the geocding results
                     console.log(data);
-
-                    //Do something with the results
-
-                    //Set the marker to new location
                     marker.setLatLng([data.feature.center[1], data.feature.center[0]]);
                 }));
             },
@@ -112,7 +102,6 @@
         });
 
         function helpCitizen() {
-            //On clicking the button, emit a 'request-accepted' event/signal and send relevant info back to server
             socket.emit('request-accepted', {
                 requestDetails: requestDetails,
                 ambulanceDetails: ambulanceDetails

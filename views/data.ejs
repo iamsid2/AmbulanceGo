@@ -14,7 +14,6 @@
 
 <script src="/socket.io/socket.io.js"></script>
 
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js"></script>
@@ -22,11 +21,9 @@
 <script type="text/javascript">
     var socket = io();
 
-    //Empty variables to store information. This will get filled later
     var map, marker;
-    mapboxgl.accessToken = '<INSERT YOUR TOKEN HERE>';
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaWFtc2lkMiIsImEiOiJjam1pemRrc3gwOW1jM3dxcWwyMXhubmx1In0.D-nlBUTjIfBj6E4NusKkqA';
 
-    //First send a GET request using JQuery AJAX and get the cop's details and save it
     $.ajax({
         url: '/requests/info',
         type: 'GET',
@@ -42,15 +39,10 @@
 
 
             map.on('load', function() {
-
-                // Add a new source from our GeoJSON data and set the
-                // 'cluster' option to true.
                 map.addSource("help-requests", {
                     type: "geojson",
                     data: data
                 });
-
-                //we can specify different color and styling formats by adding different layers
 
                 map.addLayer({
                     "id": "help-requests",
